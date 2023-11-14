@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from "../GaslurLandingPage.module.css";
+
 // YourComponent.js
 
 const Footer = () => {
@@ -45,75 +46,26 @@ const Footer = () => {
   <img
     className={styles.instagramIcon}
     alt=""
-    src={require('../Images/Facebook.png').default}
+    src={require('../Images/Facebook.png')}
   />
   <img
     className={styles.facebookIcon}
     alt="instagram"
-    src={require('../Images/Instagram.png').default}
+    src={require('../Images/Instagram.png')}
   />
   <img
     className={styles.twitterSquaredIcon}
     alt=""
-    src={require('../Images/Twitter Squared.png').default}
+    src={require('../Images/Twitter Squared.png')}
+    
   />
 </div>
 
         </div>
       </div>
-      <div className={styles.discoverParent} onClick={() => handleTextClick('Discover Parent')}>
-        <div className={styles.discover1} style={{ fontWeight: 'bold' }} onClick={() => handleTextClick('Discover')}>
-          Discover
-        </div>
-        <div className={styles.rectangleParent}>
-          <div className={styles.groupChild12} />
-          <div className={styles.filterParent}>
-            <div className={styles.filter} onClick={() => handleTextClick('Filter')}>
-              Filter
-            </div>
-            <img
-              className={styles.iconoutlinefilter}
-              alt=""
-              src="/iconoutlinefilter.svg"
-            />
-          </div>
-        </div>
-        <div className={styles.cheapestParent} onClick={() => handleTextClick('Cheapest Parent')}>
-          <div className={styles.cheapest} onClick={() => handleTextClick('Cheapest')}>
-            Cheapest
-          </div>
-          <img
-            className={styles.iconoutlinecheveronDown}
-            alt=""
-            src="/iconoutlinecheverondown.svg"
-          />
-        </div>
-        <div className={styles.newestParent} onClick={() => handleTextClick('Newest Parent')}>
-          <div className={styles.newest} onClick={() => handleTextClick('Newest')}>
-            Newest
-          </div>
-          <img
-            className={styles.iconoutlinecheveronDown1}
-            alt=""
-            src="/iconoutlinecheverondown1.svg"
-          />
-        </div>
-        <div className={styles.categoryParent} onClick={() => handleTextClick('Category Parent')}>
-          <div className={styles.category} onClick={() => handleTextClick('Category')}>
-            Category
-          </div>
-          <img
-            className={styles.iconoutlinesortAscending}
-            alt=""
-            src="/iconoutlinesortascending.svg"
-          />
-        </div>
-      </div>
-      <img
-        className={styles.unsplashog44d93injkIcon}
-        alt=""
-        src="/unsplashog44d93injk@2x.png"
-      />
+      
+      
+      
      
     </div>
   );

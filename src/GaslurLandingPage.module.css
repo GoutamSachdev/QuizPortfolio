@@ -34,6 +34,7 @@
     left: 80px;
     display: inline-block;
     width: 637px;
+    color: whitesmoke;
   }
   .discoverCollectAnd {
     top: 237px;
@@ -41,6 +42,7 @@
     letter-spacing: -2px;
     line-height: 82px;
     font-weight: 600;
+    
   }
   .inAeneanPosuere {
     top: 589px;
@@ -48,12 +50,14 @@
     letter-spacing: 0.5px;
     line-height: 36px;
     color: var(--color-gainsboro-100);
+    color: whitesmoke;
   }
   .explore {
     position: relative;
     letter-spacing: -1px;
     line-height: 36px;
     font-weight: 600;
+    color: whitesmoke;  
   }
   .createWrapper,
   .exploreWrapper {
@@ -76,35 +80,88 @@
       #9b51e0 19.72%,
       rgba(48, 129, 237, 0.8)
     );
+    cursor: pointer;
+
   }
   .createWrapper {
     left: 338px;
     border: 1px solid var(--color-lightgray);
     color: var(--color-lightgray);
   }
+  .createWrapper:hover {
+    background: linear-gradient(
+      103.91deg,
+      #9b51e0 19.72%,
+      rgba(48, 129, 237, 0.8)
+    );
+    cursor: pointer;
+  }
   .create1,
   .signIn {
     position: absolute;
     top: 12px;
-    left: 158px;
+    left: 180px;
     right: 10px;
-    letter-spacing: 1.5px;
-    line-height: 22px;
-    text-transform: uppercase;
-    font-weight: 500;
-    border: 2px solid whitesmoke; /* Initial border color */
-  border-radius: 30px; /* Border radius */
-  padding: 10px; /* Adjust the padding as needed */
+    color: #BCBCBC;
+
+
   transition: background-color 0.3s, color 0.3s, border 0.3s;
+  }
+  .signIn{
+    font-family: Poppins;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: 22px; /* 183.333% */
+letter-spacing: 1.5px;
+text-transform: uppercase;
+
   }
   .create1 {
     left: 36px;
+    width: 126px;
+height: 45px;
+flex-shrink: 0;
+border-radius: 10px;
+border: 1px solid #D7D7D7;
+display: flex; /* Add display: flex */
+  align-items: center; /* Vertically center the text */
+  justify-content: center; 
   }
-  .create1:hover,
+  .create1:hover{
+    width: 126px;
+    height: 45px;
+    flex-shrink: 0;
+    background: linear-gradient(
+      103.91deg,
+      #9b51e0 19.72%,
+      rgba(48, 129, 237, 0.8)
+    );
+    color: whitesmoke; /* Text color on hover */
+        border: 2px solid white; /* Border color on hover */
+        border-radius: 10px;
+    border: 1px solid #D7D7D7;  
+    display: flex; /* Add display: flex */
+      align-items: center; /* Vertically center the text */
+      justify-content: center; /* Horizontally center the text */
+  }
+  
   .signIn:hover {
-    background-color: white; /* Background color on hover */
-    color: black; /* Text color on hover */
+    width: 126px;
+height: 45px;
+flex-shrink: 0;
+background: linear-gradient(
+    103.91deg,
+    #9b51e0 19.72%,
+    rgba(48, 129, 237, 0.8)
+  ); /* Background color on hover */
+    color: whitesmoke; /* Text color on hover */
     border: 2px solid white; /* Border color on hover */
+    border-radius: 10px;
+border: 1px solid #D7D7D7;  
+display: flex; /* Add display: flex */
+  align-items: center; /* Vertically center the text */
+  justify-content: center; /* Horizontally center the text */
   }
   .groupChild {
     border-radius: var(--br-3xs);
@@ -123,10 +180,22 @@
   .signInParent {
     top: 20px;
     left: 1148px;
-    width: 211px;
+    width: 300px;
     font-size: var(--font-size-xs);
     color: var(--color-silver);
     cursor: pointer;
+    display: flex;
+  flex-direction: column; /* Arrange children in a column */
+  gap: 10px; 
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px; /* 183.333% */
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+    
+    
   }
   
   .loadMore {
@@ -137,12 +206,41 @@
     line-height: 22px;
     text-transform: uppercase;
     font-weight: 500;
+    color: #BCBCBC;
+
+font-family: Poppins;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: 22px; /* 183.333% */
+letter-spacing: 1.5px;
+text-transform: uppercase;
+  }
+
+  .loadMore:hover{
+    background: linear-gradient(
+        103.91deg,
+        #9b51e0 19.72%,
+        rgba(48, 129, 237, 0.8)
+      );
+
   }
   .groupItem,
   .loadMoreParent {
     position: absolute;
     width: 161px;
     height: 45px;
+    border-radius: 10px;
+border: 1px solid #D7D7D7;
+  }
+  .loadMoreParent:hover{
+    background: linear-gradient(
+        103.91deg,
+        #9b51e0 19.72%,
+        rgba(48, 129, 237, 0.8)
+      );
+
+      cursor: pointer;
   }
   .groupItem {
     top: 0;
@@ -159,28 +257,34 @@
   }
   .heart24Icon {
     position: absolute;
-    height: 0.57%;
-    width: 1.67%;
-    top: 17.95%;
-    right: 9.58%;
+    height: 1.57%;
+    width: 2.25%;
+    top: 20.20%;
+    right: 0.58%;
     bottom: 81.48%;
-    left: 88.75%;
+    left: 46.75%;
     max-width: 100%;
     overflow: hidden;
     max-height: 100%;
+    border: 2px solid transparent; /* Set the border width and make it transparent */
+    border-radius: 50%;
+    
   }
   .laura,
   .weAreHere {
     top: 729px;
     font-weight: 600;
+    color: whitesmoke;
   }
   .laura {
     position: absolute;
     left: 950px;
     line-height: 24px;
+    color: whitesmoke;
   }
   .weAreHere {
     left: 1228px;
+    color: whitesmoke;
   }
   .loremIpsum,
   .weAreHere,
@@ -188,12 +292,14 @@
   .weth1 {
     position: absolute;
     line-height: 24px;
+    color: whitesmoke;
+    
   }
   .weth {
     top: 757px;
     left: 950px;
     font-weight: 500;
-    color: var(--color-lightgray);
+    color: whitesmoke;
   }
   .loremIpsum,
   .weth1 {
@@ -220,14 +326,17 @@
     left: 80px;
     width: 298px;
     height: 24px;
+    color: whitesmoke;
   }
   .dolorSitAmetParent,
   .loremIpsumContainer {
     top: 2633px;
+    color: whitesmoke;
   }
   .dolorSitAmetParent {
     top: 1398px;
     left: 407px;
+    color: whitesmoke;
   }
   .dignissimCurabituParent,
   .dolorSitAmetContainer,
@@ -237,6 +346,7 @@
     left: 407px;
     width: 298px;
     height: 24px;
+    color: whitesmoke;
   }
   .dignissimCurabituParent,
   .dolorSitAmetContainer {
@@ -298,9 +408,19 @@
   .hotAuctions {
     top: 949px;
     left: 80px;
-    font-size: var(--heading-text-h2-poppins-48-medium-size);
+    
     letter-spacing: -1px;
     line-height: 72px;
+    color: #FFF;
+
+/* Heading Text/H2/Poppins/48/Medium */
+font-family: Poppins;
+font-size: 48px;
+font-style: normal;
+font-weight: 500;
+line-height: 72px; /* 150% */
+letter-spacing: -1px;
+
   }
   .unsplash9xngoipxceoIcon,
   .unsplashlki74jj7hUIcon,
@@ -584,7 +704,7 @@
     left: 80px;
     width: 298px;
     height: 29px;
-    color: var(--color-silver);
+    color: whitesmoke;
   }
   .endsIn013445Group,
   .groupDiv {
@@ -607,7 +727,7 @@
     left: 407px;
     width: 298px;
     height: 29px;
-    color: var(--color-silver);
+    color: whitesmoke;
   }
   .endsIn013445Parent2,
   .endsIn013445Parent3 {
@@ -625,7 +745,7 @@
     left: 734px;
     width: 298px;
     height: 29px;
-    color: var(--color-silver);
+    color: whitesmoke;
   }
   .bidParent4,
   .endsIn564445Group,
@@ -650,7 +770,7 @@
     left: 1061px;
     width: 299px;
     height: 29px;
-    color: var(--color-silver);
+    color: whitesmoke;
   }
   .endsIn013445Parent5,
   .endsIn013445Parent6 {
@@ -699,6 +819,18 @@
     left: 870.6px;
     width: 203.2px;
     height: 272px;
+    color: #FFF;
+    
+
+
+    
+  }
+  .company{
+    font-family: Poppins;
+font-size: 40px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
   }
   .activity1,
   .discover,
@@ -814,6 +946,13 @@
     font-weight: 500;
     display: inline-block;
     width: 455.1px;
+    color: #FFF;
+
+font-family: Poppins;
+font-size: 40px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
   }
   .groupContainer {
     width: 1280px;
@@ -873,17 +1012,27 @@
     width: 1280px;
     height: 476px;
     font-size: var(--font-size-21xl);
+    
   }
   .discover1 {
     position: absolute;
     top: 214.7px;
     left: 0;
-    font-size: var(--heading-text-h2-poppins-48-medium-size);
+   
     letter-spacing: -1px;
     line-height: 72px;
     font-weight: 500;
     display: inline-block;
     width: 204px;
+    color: #FFF;
+
+/* Heading Text/H2/Poppins/48/Medium */
+font-family: Poppins;
+font-size: 48px;
+font-style: normal;
+font-weight: 500;
+line-height: 72px; /* 150% */
+letter-spacing: -1px;
   }
   .groupChild12 {
     position: absolute;
@@ -903,6 +1052,14 @@
     font-weight: 500;
     display: inline-block;
     width: 53.8px;
+    color: #FFF;
+
+font-family: Poppins;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: 36px; /* 150% */
+letter-spacing: -1px;
   }
   .iconoutlinefilter {
     position: absolute;
@@ -939,6 +1096,14 @@
     font-weight: 500;
     display: inline-block;
     width: 113.7px;
+    color: #FFF;
+
+font-family: Poppins;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: 36px; /* 150% */
+letter-spacing: -1px;
   }
   .iconoutlinecheveronDown {
     position: absolute;
@@ -968,6 +1133,14 @@
     font-weight: 500;
     display: inline-block;
     width: 85.3px;
+    color: #FFF;
+
+font-family: Poppins;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: 36px; /* 150% */
+letter-spacing: -1px;
   }
   .iconoutlinecheveronDown1 {
     position: absolute;
@@ -997,6 +1170,14 @@
     font-weight: 500;
     display: inline-block;
     width: 108.6px;
+    color: #FFF;
+
+font-family: Poppins;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: 36px; /* 150% */
+letter-spacing: -1px;
   }
   .iconoutlinesortAscending {
     position: absolute;
